@@ -1,8 +1,288 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-family: Helvetica;
+    line-height: 1.5;
+    background-color: #e5e5e5;
+    display: flex;
+    overflow-x: hidden;
 }
 
-a {
-  color: #00B7FF;
+
+/* ==================== ASIDE ====================*/
+
+aside {
+    flex-basis: 74px;
+    display: flex;
+    height: 100vh;
+}
+
+.logo_content {
+    width: 70px;
+    background-color: #0d28a6;
+}
+
+.logo-left {
+    display: flex;
+    justify-content: center;
+    margin: 18px;
+}
+
+.icon-act {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 12px 26px 12px 26px;
+}
+
+.side-icon {
+    color: #ffffff;
+}
+
+.links_name {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.nav_list li {
+    margin-bottom: 13px;
+}
+
+ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+/* ==================== SUBMENU ====================*/
+
+.submenu {
+    width: 0;
+    background-color: #fff;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.submenu.active {
+    width: 100%;
+}
+
+.logo-right {
+    padding: 15px 0 15px 24px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.db-big {
+    margin-top: 30px;
+    margin-left: 24px;
+    margin-bottom: 29px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8a8a8a;
+    display: block;
+}
+
+.db-small {
+    padding: 11px 47px 11px 24px;
+    margin-top: 40px;
+    background: #cfd4ed;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #151515;
+}
+
+
+/* ==================== MAIN ====================*/
+
+main {
+    flex-basis: 100%;
+}
+
+header {
+    transition: all 0.5s ease-in-out;
+}
+
+nav {
+    background-color: #ffffff;
+    height: 70px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.acc-pic {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #cfd4ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #151515;
+}
+
+
+/* ==================== BREADCRUMB ====================*/
+
+.bread_crumb {
+    height: 43px;
+    margin-top: 32px;
+    background: none;
+    box-shadow: none;
+}
+
+.breadcrumb {
+    margin-bottom: 0;
+}
+
+.breadcrumb-item {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.link_utama {
+    color: #000000;
+    font-weight: 700;
+}
+
+.page_current {
+    color: #222222;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/* ==================== DASHBOARD ====================*/
+
+.dashboard_judul {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.list {
+    margin-top: 24px;
+}
+
+.list-car {
+    margin-top: 42px;
+    margin-bottom: 38px;
+}
+
+.list-order-judul,
+.list-car-judul {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    padding-left: 8px;
+}
+
+.list-order-judul::after {
+    content: '';
+    position: absolute;
+    background-color: #0d28a6;
+    width: 4px;
+    height: 24px;
+    left: 0;
+    z-index: -1;
+}
+
+.list-car-judul::after {
+    content: '';
+    position: absolute;
+    background-color: #0d28a6;
+    width: 4px;
+    height: 24px;
+    left: 0;
+    z-index: -1;
+}
+
+
+/* ==================== TABLE ====================*/
+
+
+/* ==================== CONTENT ====================*/
+
+.btn-primary {
+    background-color: #0d28a6;
+}
+
+.btn-tag {
+    margin-top: 24px;
+}
+
+.all {
+    border: 2px solid #0d28a6;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0d28a6;
+    background: #cfd4ed;
+}
+
+.btn-outline-secondary {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #aeb7e1;
+    border: 2px solid #aeb7e1;
+}
+
+
+/* ==================== CARD ====================*/
+
+.row {
+    margin-top: 24px;
+    margin-right: 10px;
+}
+
+.col-4 {
+    margin-bottom: 24px;
+}
+
+.card {
+    padding: 16px;
+    width: 100%;
+}
+
+.card-img-top {
+    max-width: 100%;
+}
+
+.price {
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.card-icon {
+    color: #8a8a8a;
+    margin-right: 10px;
+}
+
+.car-detail,
+li {
+    margin-top: 16px;
+}
+
+.set-btn {
+    margin-top: 24px;
+}
+
+.set-btn a {
+    padding: 8px 60px;
 }
