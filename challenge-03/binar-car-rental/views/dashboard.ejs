@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- partial head here -->
+<%- include('partials/head.ejs') %>
+
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+    </head>
+
+    <body>
+        <!-- aside -->
+        <aside>
+            <div class="logo_content">
+                <div class="logo-left">
+                    <img src="/images/square.png" alt="square" />
+                </div>
+
+                <ul class="nav_list">
+                    <li class="icon-act">
+                        <a href="dashboard"><i class="side-icon" data-feather="home"></i>
+              <span class="links_name">Dashboard</span>
+            </a>
+                        <!-- <span class="tooltip">Dashboard</span> -->
+                    </li>
+                    <li>
+                        <a href="cars"><i class="side-icon" data-feather="truck"></i>
+              <span class="links_name">Cars</span>
+            </a>
+                        <!-- <span class="tooltip">Dashboard</span> -->
+                    </li>
+                </ul>
+            </div>
+            <div class="submenu">
+                <div class="logo-right">
+                    <img src="/images/rectangle.png" alt="rectangle" />
+                </div>
+                <div class="list-submenu">
+                    <span class="db-big">DASHBOARD</span>
+                    <span class="db-small">Dashboard</span>
+                </div>
+            </div>
+        </aside>
+        <!-- aside end -->
+
+        <main>
+            <!-- header -->
+            <%- include('partials/header.ejs') %>
+
+                <!-- breadcrumb -->
+                <nav class="bread_crumb" style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                    <ol class="breadcrumb ms-3">
+                        <li class="breadcrumb-item">
+                            <a class="text-decoration-none link_utama" href="#">Dashboard</a>
+                        </li>
+                        <li class="breadcrumb-item page_current" aria-current="page">
+                            Dashboard
+                        </li>
+                    </ol>
+                </nav>
+                <!-- breadcrumb end -->
+
+                <div class="content ms-3">
+                    <h1 class="dashboard_judul">
+                        <%= title %>
+                    </h1>
+                    <div class="list">
+                        <div class="list-order">
+                            <h4 class="list-order-judul">List Order</h4>
+                            <table id="listOrder" class="table table-striped pe-4" style="width: 100%">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>User Email</th>
+                                        <th>Car</th>
+                                        <th>Start Rent</th>
+                                        <th>Finish Rent</th>
+                                        <th>Price</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for(let j = 0; j < 50; j++) { %>
+                                        <% for(let i = 0; i <
+                dashboard.length; i++) { %>
+                                            <tr>
+                                                <td>
+                                                    <%= j %>
+                                                </td>
+                                                <td>
+                                                    <%= dashboard[i].user_email %>
+                                                </td>
+                                                <td>
+                                                    <%= dashboard[i].car %>
+                                                </td>
+                                                <td>
+                                                    <%= dashboard[i].start_rent %>
+                                                </td>
+                                                <td>
+                                                    <%= dashboard[i].finish_rent %>
+                                                </td>
+                                                <td>
+                                                    <%= dashboard[i].price %>
+                                                </td>
+                                                <td>
+                                                    <%= dashboard[i].status %>
+                                                </td>
+                                            </tr>
+                                            <% } %>
+                                                <% } %>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="list-order">
+                            <h4 class="list-order-judul">List Car</h4>
+                            <table id="listOrder" class="table table-striped pe-4" style="width: 100%">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Name</th>
+                                        <th>Category</th>
+                                        <th>Price</th>
+                                        <th>Start Rent</th>
+                                        <th>Finish Rent</th>
+                                        <th>Created at</th>
+                                        <th>Updated at</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for(let i = 0; i < dashboard.length; i++) { %>
+                                        <tr>
+                                            <td>
+                                                <%= dashboard[i].name %>
+                                            </td>
+                                            <td>
+                                                <%= dashboard[i].position %>
+                                            </td>
+                                            <td>
+                                                <%= dashboard[i].office %>
+                                            </td>
+                                            <td>
+                                                <%= dashboard[i].age %>
+                                            </td>
+                                            <td>
+                                                <%= dashboard[i].startDate %>
+                                            </td>
+                                            <td>$
+                                                <%= dashboard[i].salary %>
+                                            </td>
+                                            <td>$
+                                                <%= dashboard[i].salary %>
+                                            </td>
+                                            <td>$
+                                                <%= dashboard[i].salary %>
+                                            </td>
+                                        </tr>
+                                        <% } %>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Name</th>
+                                        <th>Category</th>
+                                        <th>Price</th>
+                                        <th>Start Rent</th>
+                                        <th>Finish Rent</th>
+                                        <th>Created at</th>
+                                        <th>Updated at</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </main>
+        <script>
+            feather.replace();
+
+            let btn = document.querySelector('#btn');
+            let sidebar = document.querySelector('.submenu');
+
+            btn.onclick = () => {
+                sidebar.classList.toggle('active');
+            };
+        </script>
+        <%- include('partials/script.ejs') %>
+    </body>
+
+</html>
