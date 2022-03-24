@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<%- include('partials/head.ejs') %>
+
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+    </head>
+
+    <body>
+        <!-- aside -->
+        <aside>
+            <div class="logo_content">
+                <div class="logo-left">
+                    <img src="/images/square.png" alt="square" />
+                </div>
+
+                <ul class="nav_list">
+                    <li>
+                        <a href="/"><i class="side-icon" data-feather="home"></i>
+              <span class="links_name">Dashboard</span>
+            </a>
+                        <!-- <span class="tooltip">Dashboard</span> -->
+                    </li>
+                    <li class="icon-act">
+                        <a href="cars"><i class="side-icon" data-feather="truck"></i>
+              <span class="links_name">Cars</span>
+            </a>
+                        <!-- <span class="tooltip">Dashboard</span> -->
+                    </li>
+                </ul>
+            </div>
+            <div class="submenu">
+                <div class="logo-right">
+                    <img src="/images/rectangle.png" alt="rectangle" />
+                </div>
+                <div class="list-submenu">
+                    <span class="db-big">CARS</span>
+                    <span class="db-small">List Car</span>
+                </div>
+            </div>
+        </aside>
+        <!-- aside end -->
+
+        <main>
+            <!-- header -->
+            <%- include('partials/header.ejs') %>
+
+                <!-- breadcrumb -->
+                <nav class="bread_crumb" style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                    <ol class="breadcrumb ms-3">
+                        <li class="breadcrumb-item">
+                            <a class="text-decoration-none link_utama" href="#">Cars</a>
+                        </li>
+                        <li class="breadcrumb-item page_current" aria-current="page">
+                            List Car
+                        </li>
+                    </ol>
+                </nav>
+                <!-- breadcrumb end -->
+
+                <!-- content start -->
+                <div class="content ms-3">
+                    <div class="add-flex d-flex align-items-center justify-content-between">
+                        <h1 class="dashboard_judul">
+                            <%= title %>
+                        </h1>
+                        <a class="btn btn-primary me-4" href="#" role="button"><i role="button" data-feather="plus" id="btn"></i> Add New Car</a
+          >
+        </div>
+        <div class="btn-tag">
+          <button type="button" class="btn btn-outline-primary all">All</button>
+          <button type="button" class="btn btn-outline-secondary">Small</button>
+          <button type="button" class="btn btn-outline-secondary">
+            Medium
+          </button>
+          <button type="button" class="btn btn-outline-secondary">Large</button>
+        </div>
+
+        <div class="row">
+          <% for(let i = 0; i < 10; i++){ %> <% for(let i = 0; i < cars.length;
+          i++) { %>
+          <div class="col-4">
+            <div class="card">
+              <img src="<%= cars[i].img %>" class="card-img-top" alt="Car" />
+              <div class="card-body">
+                <h5 class="card-title"><%= cars[i].name %></h5>
+                <span class="price">Rp <%= cars[i].price %> / hari</span>
+                <ul class="car-detail">
+                  <li class="d-flex">
+                    <i class="card-icon" data-feather="key" id="btn"></i><%=
+                    cars[i].rent %>
+                  </li>
+                  <li class="d-flex">
+                    <i class="card-icon" data-feather="clock" id="btn"></i><%=
+                    cars[i].update %>
+                  </li>
+                </ul>
+                <div class="set-btn d-flex justify-content-between">
+                  <a href="#" class="btn btn-outline-danger"
+                    ><i role="button" data-feather="trash" id="btn"></i
+                    >Delete</a
+                  >
+                  <a href="#" class="btn btn-success"
+                    ><i role="button" data-feather="edit" id="btn"></i>Edit</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <% } %> <% } %>
+        </div>
+      </div>
+    </main>
+    <script>
+      // feather icon js script
+      feather.replace();
+
+      // script for control the sidebar
+      let btn = document.querySelector('#btn');
+      let sidebar = document.querySelector('.submenu');
+
+      btn.onclick = () => {
+        sidebar.classList.toggle('active');
+      };
+    </script>
+
+    <!-- bootstrap script -->
+    <%- include('partials/script.ejs') %>
+  </body>
+</html>
