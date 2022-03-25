@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<%- include('partials/head.ejs') %>
+
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+    </head>
+
+    <body class="d-flex align-items-center">
+        <div class="img-left"><img src="/images/img-auth.png" alt="img" /></div>
+        <div class="form-right ms-5">
+            <img src="/images/rectangle.png" alt="rectangle" />
+            <h1>Welcome, Admin BCR</h1>
+            <form class="form">
+                <label for="name" class="ini-label mb-3">
+          Email
+          <input
+            class="mt-2"
+            type="email"
+            id="name"
+            placeholder="Contoh: johndee@gmail.com"
+          />
+        </label>
+                <label for="password">
+          Password
+          <input
+            class="mt-2"
+            type="password"
+            id="password"
+            placeholder="6+ karakter"
+          />
+        </label>
+                <button class="btn btn-primary rounded-1 mt-3">Sign In</button>
+            </form>
+        </div>
+
+        <!-- bootstrap script -->
+        <%- include('partials/script.ejs') %>
+    </body>
+
+</html>
