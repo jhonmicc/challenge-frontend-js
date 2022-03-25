@@ -46,7 +46,7 @@
         <!-- aside end -->
 
         <main>
-            <!-- header -->
+            <!-- partial header -->
             <%- include('partials/header.ejs') %>
 
                 <!-- breadcrumb -->
@@ -69,7 +69,7 @@
                     <div class="list">
                         <div class="list-order">
                             <h4 class="list-order-judul">List Order</h4>
-                            <table id="listOrder" class="table table-striped pe-4" style="width: 100%">
+                            <table id="listCar" class="table table-striped pe-4" style="width: 100%">
                                 <thead>
                                     <tr>
                                         <th>No</th>
@@ -129,34 +129,37 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <% for(let i = 0; i < dashboard.length; i++) { %>
-                                        <tr>
-                                            <td>
-                                                <%= dashboard[i].name %>
-                                            </td>
-                                            <td>
-                                                <%= dashboard[i].position %>
-                                            </td>
-                                            <td>
-                                                <%= dashboard[i].office %>
-                                            </td>
-                                            <td>
-                                                <%= dashboard[i].age %>
-                                            </td>
-                                            <td>
-                                                <%= dashboard[i].startDate %>
-                                            </td>
-                                            <td>$
-                                                <%= dashboard[i].salary %>
-                                            </td>
-                                            <td>$
-                                                <%= dashboard[i].salary %>
-                                            </td>
-                                            <td>$
-                                                <%= dashboard[i].salary %>
-                                            </td>
-                                        </tr>
-                                        <% } %>
+                                    <% for(let j = 0; j < 50; j++) { %>
+                                        <% for(let i = 0; i <
+                dashboard.length; i++) { %>
+                                            <tr>
+                                                <td>
+                                                    <%= j %>
+                                                </td>
+                                                <td>
+                                                    <%= dashboard[i].name %>
+                                                </td>
+                                                <td>
+                                                    <%= dashboard[i].category %>
+                                                </td>
+                                                <td>
+                                                    <%= dashboard[i].startRent %>
+                                                </td>
+                                                <td>
+                                                    <%= dashboard[i].finishRent %>
+                                                </td>
+                                                <td>
+                                                    <%= dashboard[i].createdAt %>
+                                                </td>
+                                                <td>
+                                                    <%= dashboard[i].updatedAt %>
+                                                </td>
+                                                <td>
+                                                    <%= dashboard[i].name %>
+                                                </td>
+                                            </tr>
+                                            <% }%>
+                                                <% }%>
                                 </tbody>
                                 <tfoot>
                                     <tr>
@@ -175,6 +178,7 @@
                     </div>
                 </div>
         </main>
+
         <script>
             feather.replace();
 
