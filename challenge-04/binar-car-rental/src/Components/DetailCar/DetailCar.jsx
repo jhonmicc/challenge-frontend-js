@@ -7,7 +7,6 @@ import car_prod from '../../Images/car.png';
 import { FiUsers } from 'react-icons/fi';
 import { FiSettings } from 'react-icons/fi';
 import { AiOutlineCalendar } from 'react-icons/ai';
-import JSONDATA from '../../data.json';
 import { useParams } from 'react-router-dom';
 import { isEmpty } from 'lodash';
 import axios from 'axios';
