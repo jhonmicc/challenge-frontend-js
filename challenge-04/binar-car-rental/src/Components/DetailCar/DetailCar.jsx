@@ -10,14 +10,23 @@ import { AiOutlineCalendar } from 'react-icons/ai';
 import JSONDATA from '../../data.json';
 import { useParams } from 'react-router-dom';
 import { isEmpty } from 'lodash';
+import axios from 'axios';
 
 const DetailCar = () => {
   const { id } = useParams();
   const [displayedData, setDisplayedData] = useState({});
 
   useEffect(() => {
-    let filteredData = JSONDATA.filter((data) => data.id === Number(id))[0];
-    setDisplayedData(filteredData);
+    const getData = async () => {
+      try {
+        const response = await axios.get(`http://localhost:3008/datas/${id}`);
+        const datas = await response.data;
+        setDisplayedData(datas);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getData();
   }, [id]);
   console.log(displayedData);
   return (
