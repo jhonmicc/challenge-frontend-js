@@ -1,0 +1,204 @@
+{
+  "datas": [
+    {
+      "id": 1,
+      "name": "Jaguar",
+      "category": "XJ",
+      "price": 501060,
+      "tipe_driver": false,
+      "tanggal": "2022-01-14",
+      "waktu_jemput": "12:13 PM",
+      "jumlah_penumpang": 1
+    },
+    {
+      "id": 2,
+      "name": "Ford",
+      "category": "Explorer Sport",
+      "price": 352223,
+      "tipe_driver": false,
+      "tanggal": "2021-09-05",
+      "waktu_jemput": "8:47 AM",
+      "jumlah_penumpang": 3
+    },
+    {
+      "id": 3,
+      "name": "Oldsmobile",
+      "category": "Alero",
+      "price": 336143,
+      "tipe_driver": true,
+      "tanggal": "2021-07-10",
+      "waktu_jemput": "9:11 PM",
+      "jumlah_penumpang": 1
+    },
+    {
+      "id": 4,
+      "name": "Volvo",
+      "category": "V50",
+      "price": 841028,
+      "tipe_driver": false,
+      "tanggal": "2021-12-21",
+      "waktu_jemput": "10:32 AM",
+      "jumlah_penumpang": 3
+    },
+    {
+      "id": 5,
+      "name": "Jeep",
+      "category": "Wrangler",
+      "price": 454921,
+      "tipe_driver": true,
+      "tanggal": "2022-01-25",
+      "waktu_jemput": "5:50 PM",
+      "jumlah_penumpang": 1
+    },
+    {
+      "id": 6,
+      "name": "Kia",
+      "category": "Rio",
+      "price": 416528,
+      "tipe_driver": true,
+      "tanggal": "2021-12-07",
+      "waktu_jemput": "10:56 PM",
+      "jumlah_penumpang": 1
+    },
+    {
+      "id": 7,
+      "name": "Mazda",
+      "category": "Miata MX-5",
+      "price": 932654,
+      "tipe_driver": false,
+      "tanggal": "2021-11-17",
+      "waktu_jemput": "9:37 PM",
+      "jumlah_penumpang": 1
+    },
+    {
+      "id": 8,
+      "name": "Lincoln",
+      "category": "Town Car",
+      "price": 355814,
+      "tipe_driver": false,
+      "tanggal": "2021-06-19",
+      "waktu_jemput": "8:16 AM",
+      "jumlah_penumpang": 3
+    },
+    {
+      "id": 9,
+      "name": "Cadillac",
+      "category": "Escalade",
+      "price": 908521,
+      "tipe_driver": false,
+      "tanggal": "2022-01-24",
+      "waktu_jemput": "6:06 PM",
+      "jumlah_penumpang": 1
+    },
+    {
+      "id": 10,
+      "name": "Toyota",
+      "category": "Prius",
+      "price": 640651,
+      "tipe_driver": true,
+      "tanggal": "2021-11-27",
+      "waktu_jemput": "6:32 AM",
+      "jumlah_penumpang": 6
+    },
+    {
+      "id": 11,
+      "name": "Porsche",
+      "category": "928",
+      "price": 780201,
+      "tipe_driver": false,
+      "tanggal": "2022-01-26",
+      "waktu_jemput": "11:30 PM",
+      "jumlah_penumpang": 6
+    },
+    {
+      "id": 12,
+      "name": "Dodge",
+      "category": "Charger",
+      "price": 516545,
+      "tipe_driver": false,
+      "tanggal": "2021-12-07",
+      "waktu_jemput": "9:23 AM",
+      "jumlah_penumpang": 2
+    },
+    {
+      "id": 13,
+      "name": "Chevrolet",
+      "category": "Suburban 1500",
+      "price": 374173,
+      "tipe_driver": true,
+      "tanggal": "2021-05-27",
+      "waktu_jemput": "10:33 AM",
+      "jumlah_penumpang": 3
+    },
+    {
+      "id": 14,
+      "name": "GMC",
+      "category": "Jimmy",
+      "price": 573758,
+      "tipe_driver": false,
+      "tanggal": "2021-10-04",
+      "waktu_jemput": "7:20 PM",
+      "jumlah_penumpang": 1
+    },
+    {
+      "id": 15,
+      "name": "GMC",
+      "category": "Acadia",
+      "price": 760876,
+      "tipe_driver": false,
+      "tanggal": "2022-02-10",
+      "waktu_jemput": "6:20 AM",
+      "jumlah_penumpang": 5
+    },
+    {
+      "id": 16,
+      "name": "Mercedes-Benz",
+      "category": "R-Class",
+      "price": 349115,
+      "tipe_driver": false,
+      "tanggal": "2021-09-10",
+      "waktu_jemput": "10:38 PM",
+      "jumlah_penumpang": 2
+    },
+    {
+      "id": 17,
+      "name": "Nissan",
+      "category": "Titan",
+      "price": 982034,
+      "tipe_driver": false,
+      "tanggal": "2021-06-25",
+      "waktu_jemput": "11:18 PM",
+      "jumlah_penumpang": 4
+    },
+    {
+      "id": 18,
+      "name": "Ford",
+      "category": "Mustang",
+      "price": 712010,
+      "tipe_driver": true,
+      "tanggal": "2022-03-26",
+      "waktu_jemput": "6:13 AM",
+      "jumlah_penumpang": 5
+    },
+    {
+      "id": 19,
+      "name": "Subaru",
+      "category": "XT",
+      "price": 400467,
+      "tipe_driver": false,
+      "tanggal": "2021-12-11",
+      "waktu_jemput": "8:08 PM",
+      "jumlah_penumpang": 4
+    },
+    {
+      "id": 20,
+      "name": "Chevrolet",
+      "category": "Express",
+      "price": 604126,
+      "tipe_driver": true,
+      "tanggal": "2021-05-10",
+      "waktu_jemput": "10:48 AM",
+      "jumlah_penumpang": 1
+    }
+  ]
+}
