@@ -1,7 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { getData } from '../App';
 
 const carSlice = createSlice({
-    name: 'car',
+    name: 'cars',
     initialState: {
         tipeDriver: '',
         tanggal: '',
@@ -16,8 +17,7 @@ const carSlice = createSlice({
         },
         filteredData: (state) => {
             state.render = state.data.filter(
-                (data) =>
-                    data.tipe_driver === state.tipeDriver &&
+                (data) => data.tipe_driver === state.tipeDriver &&
                     new Date(state.tanggal).getTime() <= new Date(data.tanggal).getTime()
             );
         },
@@ -34,14 +34,17 @@ const carSlice = createSlice({
             state.jumlahPenumpang = action.payload
         },
         handleIdButton: (state, action) => {
-            state.render = state.data.filter(
-                (data) => data.id === action.payload
-            )
+            state.render = state.data.filter((data) => data.id === action.payload)
         }
+    },
+    extraReducers(builder) {
+        builder.addCase(getData.fulfilled, (state, action) => {
+            state.data = action.payload
+        })
     }
 })
 
 // Action creators are generated for each case reducer function
 export const carActions = carSlice.actions
 
-export default carSlice.reducer
+export default carSlice
