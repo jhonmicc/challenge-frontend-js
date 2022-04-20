@@ -5,14 +5,14 @@ import Footer from './Footer/Footer';
 import Hero from './Hero/Hero';
 
 const BinarCarRentalComponent = () => {
-  return (
-    <div>
-      <Header />
-      <Hero />
-      <Content />
-      <Footer />
-    </div>
-  );
+    return (
+        <div>
+            <Header />
+            <Hero />
+            <Content />
+            <Footer />
+        </div>
+    );
 };
 
 export default BinarCarRentalComponent;
