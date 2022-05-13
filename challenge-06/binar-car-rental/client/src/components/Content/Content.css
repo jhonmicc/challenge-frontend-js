@@ -1,0 +1,56 @@
+main {
+    max-width: 100%;
+}
+
+/* LIST YG DI FOOTER */
+
+ul {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+ul li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+/* ========= SEARCH CAR ======== */
+
+.search__car {
+    margin: 0 auto;
+    width: 70%;
+    z-index: 9999;
+    margin-top: -46px;
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 2rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.tipe__driver label,
+.tanggal label,
+.waktu label,
+.jumlah__penumpang label {
+    margin-bottom: 4px;
+}
+
+.jumlah__penumpang label,
+.tanggal label {
+    margin: 0;
+}
+
+.jumlah__penumpang input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.tipe__driver,
+.tanggal,
+.waktu,
+.jumlah__penumpang {
+    flex-grow: 0.3;
+}

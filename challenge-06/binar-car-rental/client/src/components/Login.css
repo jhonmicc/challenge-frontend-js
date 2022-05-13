@@ -1,0 +1,82 @@
+/* ==================== SIGN IN ====================*/
+.wrapper {
+    font-family: Helvetica;
+    line-height: 1.5;
+    background-color: #ffffff;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: #0D28A6 !important;
+    color: #ffffff !important;
+}
+
+.img-right {
+    flex-basis: 40%;
+}
+
+.form-left {
+    flex-basis: 482px;
+    margin: 0 auto;
+}
+
+.form-left h1 {
+    margin: 2rem 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 36px;
+}
+
+.img-right img {
+    position: sticky;
+    top: 0;
+    width: 80%;
+    /* background-size: cover; */
+    width: 100%;
+    /* max-width: 1100px; */
+}
+
+
+label {
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 0 10px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 5px;
+}
+
+input::placeholder {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #a5a5a5;
+}
+
+form button {
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.signup {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.signupfree {
+    margin-left: .5em;
+    color: #0D28A6;
+    font-weight: 700;
+    line-height: 20px;
+}
