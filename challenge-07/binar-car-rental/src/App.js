@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import Invoice from './Pages/Invoice';
 import Pembayaran from './Pages/Pembayaran';
+import BinarCarRental from './Pages/BinarCarRental';
 
 const CARS_URL = 'http://localhost:3008/datas'
 
@@ -39,6 +40,7 @@ const App = () => {
                 <Route path="/detail/:id" element={<DetailCar />} />
                 <Route path="/pembayaran" element={<Pembayaran />} />
                 <Route path="/invoice" element={<Invoice />} />
+                <Route path="/binarcarrental" element={<BinarCarRental />} />
             </Routes>
         </BrowserRouter>
     );
