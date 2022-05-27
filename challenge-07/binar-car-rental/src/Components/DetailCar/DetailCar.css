@@ -1,0 +1,109 @@
+.detail {
+  margin-top: 30px;
+}
+.bungkus-flex {
+  display: flex;
+  gap: 30px;
+}
+
+.tentang-paket-box {
+  flex-basis: 60%;
+}
+
+.tentang-paket {
+  padding: 24px;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.tentang-paket-judul,
+.refund-judul {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.refund-judul {
+  margin-top: 26px;
+}
+
+.include-judul,
+.exclude-judul {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 16px;
+}
+
+.include,
+.exclude,
+.refund-info {
+  padding-left: 16px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8a8a8a;
+}
+
+.card {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+.detail-mobil {
+  flex-basis: 40%;
+}
+
+.lanjutbayarbtn {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lanjutbayarbtn a {
+  text-decoration: none;
+  background-color: #5cb85f;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.lanjutbayarbtn a:hover {
+  opacity: 0.8;
+  transition: all 0.4s;
+}
+
+.car-detail {
+  display: flex;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  color: #8a8a8a;
+}
+
+.car-detail li {
+  margin-right: 16px;
+}
+
+.total-harga {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.total-angka {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
